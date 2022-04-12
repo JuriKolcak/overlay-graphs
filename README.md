@@ -27,7 +27,7 @@ Run the following command to generate OGs for the mechanism listed in a `mechani
 mod -f ogs.py
 ```
 
-The script produces both an `overlay_graphs.json` file with all the overlay graphs, as well as an visual output `summary/summary.pdf` with at most 10 overlay graphs per reaction sequence.
+The script produces both an `overlay_graphs.json` file with all the overlay graphs, as well as a visual output `summary/summary.pdf` with at most 10 overlay graphs per reaction sequence.
 Please note that the production of the visual summary can be relatively slow in case hundreds of mechanisms are being processed. Allowing the process to run in parallel by adding `-j [number of threads]` option may help.
 
 Finally, the input file `mechanisms.json` is expected to contain full molecule GML rules, corresponding to the elementary steps of mechanisms as depicted in [M-CSA](https://www.ebi.ac.uk/thornton-srv/m-csa/).
@@ -40,5 +40,5 @@ Run the following command to generate substrate rules from the overlay graphs in
 mod -f substrate.py
 ```
 
-The script produces both an `substrate_rules.json` file with all the substrate rules, as well as an visual output `summary/summary.pdf` with all the substrate rules.
+The script produces both a `substrate_rules.json` file with all the substrate rules, as well as a visual output `summary/summary.pdf` depicting all the rules.
 Please note that the production of the visual summary can be relatively slow in case hundreds of overlay graphs are being processed. Allowing the process to run in parallel by adding `-j [number of threads]` option may help.
