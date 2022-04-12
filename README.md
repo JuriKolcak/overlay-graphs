@@ -30,7 +30,7 @@ mod -f ogs.py
 The script produces both an `overlay_graphs.json` file with all the overlay graphs, as well as an visual output `summary/summary.pdf` with at most 10 overlay graphs per reaction sequence.
 Please note that the production of the visual summary can be relatively slow in case hundreds of mechanisms are being processed. Allowing the process to run in parallel by adding `-j [number of threads]` option may help.
 
-Finally, the input file `mechanisms.json` is expected to contain sequences of full molecule rules, corresponding to the mechanisms as depicted in [M-CSA](https://www.ebi.ac.uk/thornton-srv/m-csa/).
+Finally, the input file `mechanisms.json` is expected to contain full molecule GML rules, corresponding to the elementary steps of mechanisms as depicted in [M-CSA](https://www.ebi.ac.uk/thornton-srv/m-csa/).
 The [M-CSA](https://www.ebi.ac.uk/thornton-srv/m-csa/) data can be obtained in the appropriate format using our [scraping and conversion tool](https://github.com/chrstf/mcsa_rule_converter.git).
 
 ## Converting OGs to substrate rules
