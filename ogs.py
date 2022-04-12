@@ -37,7 +37,7 @@ def sanitize_mechanisms(mechanisms: List[Mechanism], verbosity: int = 0) -> Iter
 
 
 def _compute_overlay_graphs():
-    mechanisms = list(load_mechanisms())[:8]
+    mechanisms = list(load_mechanisms())
 
     sanitised_mechanisms = list(sanitize_mechanisms(mechanisms))
 
